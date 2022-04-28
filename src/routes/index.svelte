@@ -1,9 +1,9 @@
 <script>
 	let img_props = {
 		srcset:
-			'/src/lib/assets/profile/yang-profile-257w.webp 257w,/src/lib/assets/profile/yang-profile-513w.webp 513w,/src/lib/assets/profile/yang-profile-856w.webp 856w',
+			'/assets/profile/yang-profile-257w.webp 257w,/assets/profile/yang-profile-513w.webp 513w,/assets/profile/yang-profile-856w.webp 856w',
 		sizes: '(max-width: 768px) 200px, 856px',
-		'data-src': '/src/lib/assets/profile/yang-profile-513w.webp',
+		'data-src': '/assets/profile/yang-profile-513w.webp',
 		alt: 'Portrait of author with boxing gloves on'
 	};
 </script>

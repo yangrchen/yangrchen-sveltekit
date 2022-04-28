@@ -1,26 +1,26 @@
 [
     {
-        "data-src": "/src/lib/assets/yang-figurestudy-male.webp",
+        "data-src": "/assets/yang-figurestudy-male.webp",
         "srcset": "",
         "alt": "Drawing of male figure on paper"
     },
     {
-        "data-src": "/src/lib/assets/yang-figurestudy-female.webp",
+        "data-src": "/assets/yang-figurestudy-female.webp",
         "srcset": "",
         "alt": "Drawing of male figure on paper"
     },
     {
-        "data-src": "/src/lib/assets/yang-simplifiedheadplanes.webp",
+        "data-src": "/assets/yang-simplifiedheadplanes.webp",
         "srcset": "",
         "alt": "Drawing of male figure on paper"
     },
     {
-        "data-src": "/src/lib/assets/yang-skullstudy-front.webp",
+        "data-src": "/assets/yang-skullstudy-front.webp",
         "srcset": "",
         "alt": "Drawing of male figure on paper"
     },
     {
-        "data-src": "/src/lib/assets/yang-skullstudy-34.webp",
+        "data-src": "/assets/yang-skullstudy-34.webp",
         "srcset": "",
         "alt": "Drawing of male figure on paper"
     }
