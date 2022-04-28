@@ -1,7 +1,7 @@
 <script>
 	import WorkTile from '$lib/components/WorkTile.svelte';
 	import jobs from '$lib/data/jobs.json';
-	import resume from '$lib/yangrchen_resume_fall_2021_120521.pdf';
+	import resume from '/yangrchen_resume_fall_2021_120521.pdf';
 </script>
 
 <div class="mt-6 md:mt-10">
