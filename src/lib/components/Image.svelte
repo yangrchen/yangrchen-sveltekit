@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
-	export let imgProps;
+	export let imgProps: Object;
 
 	let loaded = false;
-	let currImg;
+	let currImg: HTMLImageElement;
 	onMount(() => {
 		currImg.onload = () => {
 			loaded = true;

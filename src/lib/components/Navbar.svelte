@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	let routes = [
+	let routes: Array<string[]> = [
 		['/', 'about'],
 		['/artwork', 'artwork'],
-		['/resume', 'resume']
+		['/resume', 'resume'],
+		['/contact', 'contact']
 	];
 </script>
 
@@ -17,6 +18,12 @@
 						class="decoration-pink-300 hover:underline"
 						class:underline={$page.url.pathname.includes(path)}
 						href={path + '/drawings'}>{name}</a
+					>
+				{:else if path === '/'}
+					<a
+						href={path}
+						class="decoration-pink-300 hover:underline"
+						class:underline={$page.url.pathname === '/'}>{name}</a
 					>
 				{:else}
 					<a
