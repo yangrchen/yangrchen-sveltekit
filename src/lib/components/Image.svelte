@@ -15,7 +15,6 @@
 
 <style>
 	img {
-		width: 100%;
 		height: inherit;
 		opacity: 0;
 		transition: opacity 1200ms ease-out;
