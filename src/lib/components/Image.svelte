@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	export let imgProps: Object;
-
+	export let imgProps: ImageProps;
 	let loaded = false;
 	let currImg: HTMLImageElement;
 	onMount(() => {
@@ -11,7 +10,7 @@
 	});
 </script>
 
-<img {...imgProps} bind:this={currImg} class:loaded decoding="async" />
+<img {...imgProps} alt={imgProps.alt} bind:this={currImg} class:loaded decoding="async" />
 
 <style>
 	img {

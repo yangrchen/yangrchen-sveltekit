@@ -2,11 +2,12 @@
 	import Image from '$lib/components/Image.svelte';
 	import IntersectionObserverArtImage from '$lib/components/IntersectionObserverArtImage.svelte';
 
-	let imgProps = {
+	let imgProps: ImageProps = {
 		srcset:
 			'/assets/profile/yang-profile-257w.webp 257w,/assets/profile/yang-profile-513w.webp 513w,/assets/profile/yang-profile-856w.webp 856w',
 		sizes: '(max-width: 768px) 200px, 856px',
-		alt: 'Portrait of author with boxing gloves on'
+		alt: 'Portrait of author with boxing gloves on',
+		'data-src': ''
 	};
 </script>
 

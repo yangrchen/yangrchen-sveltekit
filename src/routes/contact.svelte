@@ -67,8 +67,10 @@
 	{#if $errors.Message}
 		<span>{$errors.Message}</span>
 	{/if}
-	<button type="submit" disabled={!$isValid} class="rounded py-2 w-80 self-center {buttonClasses}"
-		>Send Message</button
+	<button
+		type="submit"
+		disabled={!$isValid}
+		class="rounded py-2 mt-4 w-80 self-center {buttonClasses}">Send Message</button
 	>
 	<div
 		class="g-recaptcha"
