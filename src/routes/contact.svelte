@@ -44,6 +44,7 @@
 		validateSchema: schema
 	});
 	const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+	$: buttonClasses = $isValid ? 'cursor-pointer bg-pink-300 hover:bg-pink-200' : 'bg-gray-300';
 </script>
 
 <svelte:head>
@@ -66,7 +67,9 @@
 	{#if $errors.Message}
 		<span>{$errors.Message}</span>
 	{/if}
-	<button type="submit" disabled={!$isValid}>Send Message</button>
+	<button type="submit" disabled={!$isValid} class="rounded py-2 w-80 self-center {buttonClasses}"
+		>Send Message</button
+	>
 	<div
 		class="g-recaptcha"
 		id="recaptcha"
