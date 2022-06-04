@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { createForm } from 'felte';
 	import { validator } from '@felte/validator-yup';
-	import { goto } from '$app/navigation';
 	import * as yup from 'yup';
 	import { onMount } from 'svelte';
 	onMount(() => {

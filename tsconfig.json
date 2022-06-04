@@ -5,9 +5,12 @@
 		"checkJs": true,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"lib": ["es2020", "DOM"],
+		"lib": [
+			"es2020",
+			"DOM"
+		],
 		"moduleResolution": "node",
-		"module": "es2020",
+		"module": "esnext",
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,

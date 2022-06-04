@@ -1,13 +1,14 @@
 <script>
 	import WorkTile from '$lib/components/WorkTile.svelte';
 	import jobs from '$lib/data/jobs.json';
+	const RESUME_LINK = import.meta.env.VITE_RESUME_LINK;
 </script>
 
 <div class="mt-6 md:mt-10">
 	<h1 class="text-center text-4xl font-bold">Work</h1>
 	<div>
 		<a
-			href={'/yangrchen_resume_fall_2021_120521.pdf'}
+			href={RESUME_LINK}
 			target="_blank"
 			rel="noopener"
 			class="underline decoration-gray-300 hover:decoration-pink-300">Resume Link</a

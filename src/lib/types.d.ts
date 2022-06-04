@@ -1,3 +1,5 @@
+import type { string } from "yup";
+
 export declare global {
     interface Window {
         handleCaptchaCallback: (token: string) => Promise<void>;
