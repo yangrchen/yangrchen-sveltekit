@@ -1,10 +1,10 @@
 <script lang="ts">
 	import IntersectionObserverArtImage from '$lib/components/IntersectionObserverArtImage.svelte';
-	import Image from '$lib/components/Image.svelte';
+	import LazyImage from '$lib/components/LazyImage.svelte';
 	//@ts-ignore
 	import ProfileImage from '/static/assets/profile/yang-profile.png?width=1366;768;366&format=webp&aspect=2:3&srcset';
 	let imgProps: ImageProps = {
-		srcset: ProfileImage,
+		'data-srcset': ProfileImage,
 		alt: 'Portrait of author with boxing gloves on',
 		'data-src': ''
 	};
@@ -14,7 +14,7 @@
 	class="flex flex-col space-y-10 lg:space-x-8 md:space-y-0 lg:flex-row mt-12 justify-center items-center"
 >
 	<IntersectionObserverArtImage>
-		<Image {imgProps} />
+		<LazyImage {imgProps} />
 	</IntersectionObserverArtImage>
 	<div
 		class="w-5/6 lg:w-2/4 text-l break-words leading-loose md:leading-loose md:text-xl lg:leading-loose lg:text-2xl xl:leading-loose xl:text-xl lg:pt-0 xl:pt-0 space-y-2"

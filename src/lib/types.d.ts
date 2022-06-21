@@ -9,7 +9,6 @@ export declare global {
     interface ImageProps {
         alt: string;
         'data-src': string;
-        srcset?: string;
-        sizes?: string;
+        'data-srcset': string;
     }
 }

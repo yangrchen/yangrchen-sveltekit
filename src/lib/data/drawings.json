@@ -1,26 +1,31 @@
 [
     {
         "data-src": "/assets/yang-figurestudy-male.webp",
+        "data-srcset": "/assets/yang-figurestudy-male.webp ",
         "srcset": "",
         "alt": "Charcoal drawing of a sitting male figure on newsprint"
     },
     {
         "data-src": "/assets/yang-figurestudy-female.webp",
+        "data-srcset": "/assets/yang-figurestudy-female.webp ",
         "srcset": "",
         "alt": "Charcoal drawing of a standing female figure on newsprint"
     },
     {
         "data-src": "/assets/yang-simplifiedheadplanes.webp",
+        "data-srcset": "/assets/yang-simplifiedheadplanes.webp ",
         "srcset": "",
         "alt": "Drawing of a geometric head on newsprint"
     },
     {
         "data-src": "/assets/yang-skullstudy-front.webp",
+        "data-srcset": "/assets/yang-skullstudy-front.webp ",
         "srcset": "",
         "alt": "Drawing of a skull front view on newsprint"
     },
     {
         "data-src": "/assets/yang-skullstudy-34.webp",
+        "data-srcset": "/assets/yang-skullstudy-34.webp ",
         "srcset": "",
         "alt": "Drawing of a skull in three-quarters view on newsprint"
     }
