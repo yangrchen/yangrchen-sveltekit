@@ -11,4 +11,10 @@ export declare global {
         'data-src': string;
         'data-srcset': string;
     }
+
+    module "*&imagetools" {
+        const out;
+        export default out;
+    }
 }
+

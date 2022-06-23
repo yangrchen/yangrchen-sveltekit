@@ -17,8 +17,11 @@
 					if (intersecting) {
 						observer.unobserve(container);
 						let img = entries[0].target.firstChild as HTMLImageElement;
-						img.src = img.dataset.src as string;
-						img.srcset = img.dataset.srcset as string;
+						if (img.dataset.src) {
+							img.src = img.dataset.src as string;
+						} else {
+							img.srcset = img.dataset.srcset as string;
+						}
 					}
 				},
 				{
