@@ -2,14 +2,32 @@
 	import '../app.css';
 	// @ts-ignore
 	import Navbar from '$lib/components/Navbar.svelte';
+	import InstagramLogo from '/static/assets/social/instagram.svg';
+	import LinkedinLogo from '/static/assets/social/linkedin.svg';
 </script>
 
 <div class="flex flex-col mt-10 xl:mx-48">
 	<Navbar />
 	<slot />
 	<footer class="px-5 text-center text-sm md:text-base mt-14 mb-4">
-		Built with love by Yang Chen using <span class="underline">Svelte</span>
-		and <span class="underline">Tailwind CSS</span>.
+		<div class="flex justify-center space-x-4 mb-2">
+			<a href="https://www.instagram.com/imagining.yang/" target="_blank" rel="noopener noreferrer">
+				<img
+					src="/static/assets/social/instagram.svg"
+					width="30"
+					height="30"
+					alt="Instagram logo"
+				/>
+			</a>
+			<a href="https://www.linkedin.com/in/yangrchen/" target="_blank" rel="noopener noreferrer">
+				<img src="/static/assets/social/linkedin.svg" width="30" height="30" alt="" />
+			</a>
+		</div>
+		<p>
+			Built with love by Yang Chen using <span class="underline">Svelte</span>
+			and <span class="underline">Tailwind CSS</span>
+		</p>
+		.
 	</footer>
 </div>
 
