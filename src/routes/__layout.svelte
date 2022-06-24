@@ -12,15 +12,10 @@
 	<footer class="px-5 text-center text-sm md:text-base mt-14 mb-4">
 		<div class="flex justify-center space-x-4 mb-2">
 			<a href="https://www.instagram.com/imagining.yang/" target="_blank" rel="noopener noreferrer">
-				<img
-					src="/static/assets/social/instagram.svg"
-					width="30"
-					height="30"
-					alt="Instagram logo"
-				/>
+				<img src="/assets/social/instagram.svg" width="30" height="30" alt="Instagram logo" />
 			</a>
 			<a href="https://www.linkedin.com/in/yangrchen/" target="_blank" rel="noopener noreferrer">
-				<img src="/static/assets/social/linkedin.svg" width="30" height="30" alt="" />
+				<img src="/assets/social/linkedin.svg" width="30" height="30" alt="" />
 			</a>
 		</div>
 		<p>
