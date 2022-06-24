@@ -17,10 +17,10 @@
 					if (intersecting) {
 						observer.unobserve(container);
 						let img = entries[0].target.firstChild as HTMLImageElement;
-						if (img.dataset.src) {
-							img.src = img.dataset.src as string;
-						} else {
+						if (img.dataset.srcset) {
 							img.srcset = img.dataset.srcset as string;
+						} else {
+							img.src = img.dataset.src as string;
 						}
 					}
 				},
@@ -36,6 +36,6 @@
 	});
 </script>
 
-<div class="h-[25em] md:h-[45em] lg:h-[35em] 2xl:h-[40em]" bind:this={container}>
+<div class="h-[25em] md:h-[64em] lg:h-[35em] 2xl:h-[40em]" bind:this={container}>
 	<slot />
 </div>
