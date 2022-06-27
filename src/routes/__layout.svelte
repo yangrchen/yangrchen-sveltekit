@@ -6,7 +6,7 @@
 	import LinkedinLogo from '/static/assets/social/linkedin.svg';
 </script>
 
-<div class="flex flex-col mt-10 xl:mx-48">
+<div class="flex flex-col mx-10 mt-10 xl:mx-48">
 	<Navbar />
 	<slot />
 	<footer class="px-5 text-center text-sm md:text-base mt-14 mb-4">
