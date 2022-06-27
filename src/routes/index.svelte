@@ -22,6 +22,7 @@
 			class="text-l break-words leading-loose md:leading-loose md:text-xl lg:leading-loose lg:text-2xl xl:leading-loose xl:text-xl md:pt-16 lg:pt-0 xl:pt-0"
 		>
 			Hiya! I'm Yang, a software consultant and artist based in Chapel Hill. I love to design
+			awesome projects for end users at
 			<a
 				href="https://www.macedontechnologies.com/"
 				target="_blank"
