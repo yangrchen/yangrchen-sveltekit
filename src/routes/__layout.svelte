@@ -18,11 +18,7 @@
 				<img src="/assets/social/linkedin.svg" width="30" height="30" alt="" />
 			</a>
 		</div>
-		<p>
-			Built with love by Yang Chen using <span class="underline">Svelte</span>
-			and <span class="underline">Tailwind CSS</span>
-		</p>
-		.
+		<div>Built with love by Yang Chen using Svelte and Tailwind CSS</div>
 	</footer>
 </div>
 

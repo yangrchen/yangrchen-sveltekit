@@ -22,24 +22,70 @@
 			class="text-l break-words leading-loose md:leading-loose md:text-xl lg:leading-loose lg:text-2xl xl:leading-loose xl:text-xl md:pt-16 lg:pt-0 xl:pt-0"
 		>
 			Hiya! I'm Yang, a software consultant and artist based in Chapel Hill. I love to design
-			awesome projects for end users at <a
+			<a
 				href="https://www.macedontechnologies.com/"
 				target="_blank"
 				rel="noopener"
-				class="underline decoration-emerald-500">Macedon Technologies</a
+				class="border-b-2 border-emerald-300 hover:border-emerald-500 green-highlight"
+			>
+				Macedon Technologies</a
 			>. Outside of work, I'm an avid
-			<a href={'/artwork/drawings'} class="underline decoration-cyan-500">representational artist</a
+			<a
+				href={'/artwork/drawings'}
+				class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight"
+			>
+				representational artist</a
 			>
 			and a curious student of the online program at
 			<a
 				href="https://www.wattsatelier.com/"
 				target="_blank"
 				rel="noopener"
-				class="underline decoration-pink-500">Watts Atelier</a
-			>
-			Check out my work in the
-			<a href={'/artwork/drawings'} class="underline decoration-cyan-500">gallery</a>!
+				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight">Watts Atelier</a
+			>. Check out my work in the
+			<a
+				href={'/artwork/drawings'}
+				class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight">gallery</a
+			>!
 		</p>
 		<p>Feel free to ping me by email or social media!</p>
 	</div>
 </div>
+
+<style>
+	a.blue-highlight {
+		background: linear-gradient(to bottom, rgba(6, 182, 212, 0.3) 0%, rgba(6, 182, 212, 0.3) 100%);
+		background-repeat: no-repeat;
+		background-size: 100% 0;
+		background-position: 0 111%;
+		transition: all 0.5s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	a.pink-highlight {
+		background: linear-gradient(
+			to bottom,
+			rgba(236, 72, 153, 0.3) 0%,
+			rgba(236, 72, 153, 0.3) 100%
+		);
+		background-repeat: no-repeat;
+		background-size: 100% 0;
+		background-position: 0 100%;
+		transition: all 0.5s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	a.green-highlight {
+		background: linear-gradient(
+			to bottom,
+			rgba(16, 185, 129, 0.3) 0%,
+			rgba(16, 185, 129, 0.3) 100%
+		);
+		background-repeat: no-repeat;
+		background-size: 100% 0;
+		background-position: 0 111%;
+		transition: all 0.5s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	a:hover {
+		background-size: 100% 110%;
+	}
+</style>
