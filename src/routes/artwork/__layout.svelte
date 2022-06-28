@@ -14,9 +14,9 @@
 			<li>
 				<a
 					href={path}
-					class="underline hover:decoration-pink-300"
-					class:decoration-gray-400={!$page.url.pathname.includes(path.slice(1))}
-					class:decoration-pink-300={$page.url.pathname.includes(path.slice(1))}>{name}</a
+					class="border-b-2 hover:border-pink-500 pink-highlight"
+					class:border-gray-300={!$page.url.pathname.includes(path.slice(1))}
+					class:border-pink-500={$page.url.pathname.includes(path.slice(1))}>{name}</a
 				>
 			</li>
 		{/each}
@@ -27,3 +27,21 @@
 >
 	<slot />
 </div>
+
+<style>
+	a.pink-highlight {
+		background: linear-gradient(
+			to bottom,
+			rgba(236, 72, 153, 0.3) 0%,
+			rgba(236, 72, 153, 0.3) 100%
+		);
+		background-repeat: no-repeat;
+		background-size: 100% 0;
+		background-position: 0 100%;
+		transition: all 0.5s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	a:hover {
+		background-size: 100% 110%;
+	}
+</style>

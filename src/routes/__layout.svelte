@@ -15,7 +15,7 @@
 				<img src="/assets/social/instagram.svg" width="30" height="30" alt="Instagram logo" />
 			</a>
 			<a href="https://www.linkedin.com/in/yangrchen/" target="_blank" rel="noopener noreferrer">
-				<img src="/assets/social/linkedin.svg" width="30" height="30" alt="" />
+				<img src="/assets/social/linkedin.svg" width="30" height="30" alt="LinkedIn logo" />
 			</a>
 		</div>
 		<div>Built with love by Yang Chen using Svelte and Tailwind CSS</div>

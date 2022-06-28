@@ -15,20 +15,23 @@
 			<li>
 				{#if path == '/artwork'}
 					<a
-						class="decoration-pink-300 hover:underline"
-						class:underline={$page.url.pathname.includes(path)}
+						class="pink-highlight border-gray-300 border-b-2 hover:border-pink-500"
+						class:border-pink-500={$page.url.pathname.includes(path)}
+						class:border-gray-300={!$page.url.pathname.includes(path)}
 						href={path + '/drawings'}>{name}</a
 					>
 				{:else if path === '/'}
 					<a
 						href={path}
-						class="decoration-pink-300 hover:underline"
-						class:underline={$page.url.pathname === '/'}>{name}</a
+						class="pink-highlight border-b-2 hover:border-pink-500"
+						class:border-pink-500={$page.url.pathname === '/'}
+						class:border-gray-300={$page.url.pathname !== '/'}>{name}</a
 					>
 				{:else}
 					<a
-						class="decoration-pink-300 hover:underline"
-						class:underline={$page.url.pathname.includes(path)}
+						class="pink-highlight border-gray-300 border-b-2 hover:border-pink-500"
+						class:border-pink-500={$page.url.pathname.includes(path)}
+						class:border-gray-300={!$page.url.pathname.includes(path)}
 						href={path}>{name}</a
 					>
 				{/if}
@@ -44,5 +47,20 @@
 	}
 	nav > a {
 		font-family: 'Martel Sans', sans-serif;
+	}
+	a.pink-highlight {
+		background: linear-gradient(
+			to bottom,
+			rgba(236, 72, 153, 0.3) 0%,
+			rgba(236, 72, 153, 0.3) 100%
+		);
+		background-repeat: no-repeat;
+		background-size: 100% 0;
+		background-position: 0 100%;
+		transition: all 0.5s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	a:hover {
+		background-size: 100% 110%;
 	}
 </style>
