@@ -11,6 +11,9 @@ export declare global {
         'data-src': string;
         'data-srcset': string;
     }
+    interface CustomResponse {
+        message?: string;
+    }
 
     module "*&imagetools" {
         const out;

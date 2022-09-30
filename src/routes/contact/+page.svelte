@@ -11,7 +11,7 @@
 	let name: string;
 	let email: string;
 	let message: string;
-	let resMessage: string;
+	let res: CustomResponse = {};
 	const handleCaptchaCallback = async (token: string) => {
 		let submit = await fetch('/contact', {
 			method: 'POST',
@@ -21,8 +21,7 @@
 			}
 		});
 		resetCaptcha();
-		let res = await submit.json();
-		resMessage = res.message;
+		res = await submit.json();
 	};
 	const handleCaptchaError = () => {
 		console.log('Captcha error');
@@ -81,8 +80,8 @@
 		data-size="invisible"
 	/>
 </form>
-{#if resMessage}
-	{resMessage}
+{#if res.message !== undefined}
+	{res.message}
 {/if}
 
 <style>

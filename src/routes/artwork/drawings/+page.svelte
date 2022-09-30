@@ -8,8 +8,16 @@
 	import drawings from '$lib/data/drawings';
 </script>
 
-{#each drawings as imgProps}
-	<IntersectionObserverArtImage>
+{#each drawings as drawingProps}
+	{@const imgProps = {
+		'data-src': drawingProps.dataSrc,
+		'data-srcset': drawingProps.dataSrcset,
+		alt: drawingProps.alt
+	}}
+	{@const artInfo = {
+		displayName: drawingProps.displayName
+	}}
+	<IntersectionObserverArtImage {artInfo}>
 		<LazyImage {imgProps} />
 	</IntersectionObserverArtImage>
 {/each}
