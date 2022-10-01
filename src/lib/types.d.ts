@@ -8,8 +8,7 @@ export declare global {
     }
     interface ImageProps {
         alt: string;
-        'data-src': string;
-        'data-srcset': string;
+        srcset: string;
     }
     interface CustomResponse {
         message?: string;

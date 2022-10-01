@@ -12,77 +12,66 @@ import AW11 from '$artwork/female-head-shadow-mapping-1.png?width=1366;768;366&a
 
 export default [
     {
-        dataSrc: "",
-        dataSrcset: AW7,
+        srcset: AW7,
         alt: "Charcoal layin drawing of a female front pose",
         displayName: 'Testing display name'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW8,
+        srcset: AW8,
         alt: "Charcoal drawing of a female head with long hair in profile view",
         displayName: 'Testing display name',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW9,
+        srcset: AW9,
         alt: "Charcoal drawing of a female head with long hair in profile view with shading",
         displayName: 'Testing display name',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW10,
+        srcset: AW10,
         alt: "Charcoal drawing of a female head in three quarter view with eyes",
         displayName: 'Testing display name',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW11,
+        srcset: AW11,
         alt: "Charcoal drawing of a female head in three quarter view without eyes",
         displayName: 'Testing display name',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW1,
+        srcset: AW1,
         alt: "Charcoal drawing of an ear on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW2,
+        srcset: AW2,
         alt: "Charcoal drawing of an eye on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW3,
+        srcset: AW3,
         alt: "Charcoal drawing of a female figure on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW4,
+        srcset: AW4,
         alt: "Charcoal drawing of male head in profile on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW5,
+        srcset: AW5,
         alt: "Charcoal drawing of a planar head on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'
     },
     {
-        dataSrc: "",
-        dataSrcset: AW6,
+        srcset: AW6,
         alt: "Charcoal drawing of a front view skull on newsprint paper",
         displayName: '',
         medium: 'Charcoal Pencil'

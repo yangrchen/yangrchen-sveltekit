@@ -3,9 +3,8 @@
 	import LazyImage from '$lib/components/LazyImage.svelte';
 	import ProfileImage from '/static/assets/profile/yang-profile-2.png?width=1366;768;366&format=webp&aspect=2:3&srcset&imagetools';
 	let imgProps: ImageProps = {
-		'data-srcset': ProfileImage,
-		alt: 'Portrait of author with boxing gloves on',
-		'data-src': ''
+		srcset: ProfileImage,
+		alt: 'Portrait of author with boxing gloves on'
 	};
 </script>
 

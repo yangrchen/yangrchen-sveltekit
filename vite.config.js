@@ -10,7 +10,7 @@ const config = {
         }
     },
     publicDir: 'static',
-    plugins: [sveltekit()],
+    plugins: [sveltekit(), imagetools({ force: true })],
     resolve: {
         alias: {
             '$artwork': path.resolve('/static/assets/artwork')
