@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	export let top = 0;
-	export let bottom = -100;
+	export let bottom = 0;
 	export let left = 0;
 	export let right = 0;
 
@@ -30,6 +30,6 @@
 	});
 </script>
 
-<div class="relative h-[25em] md:h-[64em] lg:h-[35em] 2xl:h-[40em]" bind:this={container}>
+<div class="relative h-[25em] md:h-[56em] lg:h-[38em] 2xl:h-[40em]" bind:this={container}>
 	<slot {intersecting} />
 </div>

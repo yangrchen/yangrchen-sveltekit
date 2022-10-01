@@ -42,6 +42,14 @@
 				target="_blank"
 				rel="noopener"
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight">Watts Atelier</a
+			>
+			and
+			<a
+				href="https://foundationartschool.com/"
+				target="_blank"
+				rel="noopener"
+				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight"
+				>Foundation Art School</a
 			>. Check out my work in the
 			<a
 				href={'/artwork/drawings'}

@@ -10,70 +10,73 @@ import AW9 from '$artwork/female-head-2-value.png?width=1366;768;366&aspect=0.75
 import AW10 from '$artwork/female-head-shadow-mapping-2.png?width=1366;768;366&aspect=0.75&webp&quality=20&srcset&imagetools'
 import AW11 from '$artwork/female-head-shadow-mapping-1.png?width=1366;768;366&aspect=0.75&webp&quality=20&srcset&imagetools'
 
-export default [
+const drawings: DrawingProps[] = [
     {
         srcset: AW7,
         alt: "Charcoal layin drawing of a female front pose",
-        displayName: 'Testing display name'
+        displayName: '20 Min. Female Layin Study',
+        medium: 'Charcoal Pencil'
     },
     {
         srcset: AW8,
         alt: "Charcoal drawing of a female head with long hair in profile view",
-        displayName: 'Testing display name',
+        displayName: 'Female Profile Head Layin w/ Shadow Mapping',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW9,
         alt: "Charcoal drawing of a female head with long hair in profile view with shading",
-        displayName: 'Testing display name',
+        displayName: 'Female Profile Two Value Layin',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW10,
         alt: "Charcoal drawing of a female head in three quarter view with eyes",
-        displayName: 'Testing display name',
+        displayName: 'Female 3/4 Layin w/ Shadow Mapping',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW11,
         alt: "Charcoal drawing of a female head in three quarter view without eyes",
-        displayName: 'Testing display name',
+        displayName: 'Female 3/4 Layin w/ Shadow Mapping 2',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW1,
         alt: "Charcoal drawing of an ear on newsprint paper",
-        displayName: '',
+        displayName: 'Ear Master Study (Brian Knox)',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW2,
         alt: "Charcoal drawing of an eye on newsprint paper",
-        displayName: '',
+        displayName: 'Eyes Master Study (Brian Knox)',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW3,
         alt: "Charcoal drawing of a female figure on newsprint paper",
-        displayName: '',
+        displayName: 'Female Structural Figure Layin',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW4,
         alt: "Charcoal drawing of male head in profile on newsprint paper",
-        displayName: '',
+        displayName: 'Male Profile Head Layin',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW5,
         alt: "Charcoal drawing of a planar head on newsprint paper",
-        displayName: '',
+        displayName: 'Simplified Asaro Head Drawing',
         medium: 'Charcoal Pencil'
     },
     {
         srcset: AW6,
         alt: "Charcoal drawing of a front view skull on newsprint paper",
-        displayName: '',
+        displayName: 'Front View Skull Drawing',
         medium: 'Charcoal Pencil'
     }
-];
+
+]
+export default drawings;

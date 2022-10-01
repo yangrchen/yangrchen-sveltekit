@@ -10,6 +10,10 @@ export declare global {
         alt: string;
         srcset: string;
     }
+    interface DrawingProps extends ImageProps {
+        medium: string,
+        displayName: string
+    }
     interface CustomResponse {
         message?: string;
     }
