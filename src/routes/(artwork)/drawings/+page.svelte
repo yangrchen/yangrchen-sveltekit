@@ -9,7 +9,8 @@
 {#each drawings as drawingProps}
 	<IntersectionObserverArtImage bottom={-100} let:intersecting>
 		{#if intersecting}
-			<LazyImage imgProps={drawingProps} />
+			{@const imgProps = { srcset: drawingProps.srcset, alt: drawingProps.alt }}
+			<LazyImage {imgProps} />
 			<div
 				class="absolute top-0 left-0 right-0 z-100 h-full pl-4 md:px-10 text-lg md:text-5xl lg:text-4xl overlay bg-gray-800  opacity-0 hover:opacity-80 transition-opacity ease-in-out duration-500 text-white"
 			>

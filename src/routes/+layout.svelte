@@ -1,9 +1,8 @@
 <script>
 	import '../app.css';
-	// @ts-ignore
 	import Navbar from '$lib/components/Navbar.svelte';
-	import InstagramLogo from '/static/assets/social/instagram.svg';
-	import LinkedinLogo from '/static/assets/social/linkedin.svg';
+	import InstagramLogo from '/src/assets/instagram.svg';
+	import LinkedinLogo from '/src/assets/linkedin.svg';
 </script>
 
 <div class="flex flex-col mx-4 mt-10 xl:mx-48">

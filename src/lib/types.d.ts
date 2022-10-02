@@ -8,6 +8,7 @@ export declare global {
     }
     interface ImageProps {
         alt: string;
+        src?: string;
         srcset: string;
     }
     interface DrawingProps extends ImageProps {
