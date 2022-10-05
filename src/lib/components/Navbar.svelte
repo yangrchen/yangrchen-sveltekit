@@ -6,6 +6,7 @@
 		['/resume', 'resume'],
 		['/contact', 'contact']
 	];
+	let artworkRoutes = ['drawings', 'digital', 'graphic'];
 </script>
 
 <nav class="flex flex-col items-center sticky top-0 p-2 z-50">
@@ -16,9 +17,9 @@
 				{#if path == '/artwork'}
 					<a
 						class="pink-highlight border-gray-300 border-b-2 hover:border-pink-500"
-						class:border-pink-500={$page.url.pathname.includes(path)}
-						class:border-gray-300={!$page.url.pathname.includes(path)}
-						href={path + '/drawings'}>{name}</a
+						class:border-pink-500={artworkRoutes.some((r) => $page.url.pathname.includes(r))}
+						class:border-gray-300={!artworkRoutes.some((r) => $page.url.pathname.includes(r))}
+						href={'/drawings'}>{name}</a
 					>
 				{:else if path === '/'}
 					<a

@@ -10,23 +10,17 @@
 
 	onMount(() => {
 		if (typeof IntersectionObserver !== 'undefined') {
-			const rootMargin = `${bottom}px ${left}px ${top}px ${right}px`;
+			const rootMargin = `${top}px ${right}px ${bottom}px ${left}px`;
 			const observer = new IntersectionObserver(
 				(entries) => {
 					intersecting = entries[0].isIntersecting;
 					if (intersecting) {
 						observer.unobserve(container);
-						let img = entries[0].target.firstChild as HTMLImageElement;
-						if (img.dataset.srcset) {
-							img.srcset = img.dataset.srcset as string;
-						} else {
-							img.src = img.dataset.src as string;
-						}
 					}
 				},
 				{
 					rootMargin,
-					threshold: 0.2
+					threshold: 1.0
 				}
 			);
 
@@ -36,6 +30,6 @@
 	});
 </script>
 
-<div class="h-[25em] md:h-[64em] lg:h-[35em] 2xl:h-[40em]" bind:this={container}>
-	<slot />
+<div class="relative h-[25em] md:h-[56em] lg:h-[38em] 2xl:h-[40em]" bind:this={container}>
+	<slot {intersecting} />
 </div>

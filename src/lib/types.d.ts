@@ -8,8 +8,15 @@ export declare global {
     }
     interface ImageProps {
         alt: string;
-        'data-src': string;
-        'data-srcset': string;
+        src?: string;
+        srcset: string;
+    }
+    interface DrawingProps extends ImageProps {
+        medium: string,
+        displayName: string
+    }
+    interface CustomResponse {
+        message?: string;
     }
 
     module "*&imagetools" {

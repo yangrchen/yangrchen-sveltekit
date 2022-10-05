@@ -10,60 +10,73 @@ import AW9 from '$artwork/female-head-2-value.png?width=1366;768;366&aspect=0.75
 import AW10 from '$artwork/female-head-shadow-mapping-2.png?width=1366;768;366&aspect=0.75&webp&quality=20&srcset&imagetools'
 import AW11 from '$artwork/female-head-shadow-mapping-1.png?width=1366;768;366&aspect=0.75&webp&quality=20&srcset&imagetools'
 
-export default [
+const drawings: DrawingProps[] = [
     {
-        "data-src": "",
-        "data-srcset": AW7,
-        alt: "Charcoal layin drawing of a female front pose"
+        srcset: AW7,
+        alt: "Charcoal layin drawing of a female front pose",
+        displayName: '20 Min. Female Layin Study',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW8,
-        alt: "Charcoal drawing of a female head with long hair in profile view"
+        srcset: AW8,
+        alt: "Charcoal drawing of a female head with long hair in profile view",
+        displayName: 'Female Profile Head Layin w/ Shadow Mapping',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW9,
-        alt: "Charcoal drawing of a female head with long hair in profile view with shading"
+        srcset: AW9,
+        alt: "Charcoal drawing of a female head with long hair in profile view with shading",
+        displayName: 'Female Profile Two Value Layin',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW10,
-        alt: "Charcoal drawing of a female head in three quarter view with eyes"
+        srcset: AW10,
+        alt: "Charcoal drawing of a female head in three quarter view with eyes",
+        displayName: 'Female 3/4 Layin w/ Shadow Mapping',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW11,
-        alt: "Charcoal drawing of a female head in three quarter view without eyes"
+        srcset: AW11,
+        alt: "Charcoal drawing of a female head in three quarter view without eyes",
+        displayName: 'Female 3/4 Layin w/ Shadow Mapping 2',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW1,
-        alt: "Charcoal drawing of an ear on newsprint paper"
+        srcset: AW1,
+        alt: "Charcoal drawing of an ear on newsprint paper",
+        displayName: 'Ear Master Study (Brian Knox)',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW2,
-        alt: "Charcoal drawing of an eye on newsprint paper"
+        srcset: AW2,
+        alt: "Charcoal drawing of an eye on newsprint paper",
+        displayName: 'Eyes Master Study (Brian Knox)',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW3,
-        alt: "Charcoal drawing of a female figure on newsprint paper"
+        srcset: AW3,
+        alt: "Charcoal drawing of a female figure on newsprint paper",
+        displayName: 'Female Structural Figure Layin',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW4,
-        alt: "Charcoal drawing of male head in profile on newsprint paper"
+        srcset: AW4,
+        alt: "Charcoal drawing of male head in profile on newsprint paper",
+        displayName: 'Male Profile Head Layin',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW5,
-        alt: "Charcoal drawing of a planar head on newsprint paper"
+        srcset: AW5,
+        alt: "Charcoal drawing of a planar head on newsprint paper",
+        displayName: 'Simplified Asaro Head Drawing',
+        medium: 'Charcoal Pencil'
     },
     {
-        "data-src": "",
-        "data-srcset": AW6,
-        alt: "Charcoal drawing of a front view skull on newsprint paper"
+        srcset: AW6,
+        alt: "Charcoal drawing of a front view skull on newsprint paper",
+        displayName: 'Front View Skull Drawing',
+        medium: 'Charcoal Pencil'
     }
-];
+
+]
+export default drawings;
