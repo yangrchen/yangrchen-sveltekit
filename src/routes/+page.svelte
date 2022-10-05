@@ -30,10 +30,7 @@
 			>
 				Macedon Technologies</a
 			>. Outside of work, I'm an avid
-			<a
-				href={'/artwork/drawings'}
-				class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight"
-			>
+			<a href={'/drawings'} class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight">
 				representational artist</a
 			>
 			and a curious student of the online program at
@@ -51,9 +48,8 @@
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight"
 				>Foundation Art School</a
 			>. Check out my work in the
-			<a
-				href={'/artwork/drawings'}
-				class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight">gallery</a
+			<a href={'/drawings'} class="border-b-2 border-cyan-300 hover:border-cyan-500 blue-highlight"
+				>gallery</a
 			>!
 		</p>
 		<p>Feel free to ping me by email or social media!</p>
