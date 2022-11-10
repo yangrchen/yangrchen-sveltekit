@@ -23,7 +23,7 @@
 	</ul>
 </nav>
 <div
-	class="mt-6 flex flex-col space-y-16 justify-center place-items-center md:space-y-16 md:mx-6 lg:grid lg:gap-y-24 lg:gap-x-5 lg:grid-cols-2 lg:space-y-0 xl:gap-y-10 2xl:grid-cols-3"
+	class="mt-6 flex flex-col space-y-16 justify-center place-items-center md:space-y-16 md:mx-6 lg:grid lg:gap-y-24 lg:gap-x-2 lg:grid-cols-2 lg:space-y-0 xl:gap-y-10 4xl:grid-cols-3"
 >
 	<slot />
 </div>
