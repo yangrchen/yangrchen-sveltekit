@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { lazyLoad } from '$lib/actions/lazyLoad';
-	import ProfileImage from '/src/assets/profile/yang-profile-2.png?width=1366;768;366&format=webp&aspect=2:3&srcset&imagetools';
+	import ProfileImage from '$lib/assets/profile/yang-profile-2.png?width=1366;768;366&format=webp&aspect=2:3&srcset&imagetools';
 	let imgProps: ImageProps = {
 		srcset: ProfileImage,
 		alt: 'Portrait of author with boxing gloves on'
