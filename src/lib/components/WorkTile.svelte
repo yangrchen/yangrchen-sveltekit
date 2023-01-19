@@ -15,7 +15,7 @@
 				<a
 					{href}
 					class="underline decoration-gray-300 hover:decoration-pink-300"
-					rel="noopener"
+					rel="noopener noreferrer"
 					target="_blank">{company}</a
 				>
 			{:else}

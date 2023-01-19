@@ -2,7 +2,6 @@
 	import WorkTile from '$lib/components/WorkTile.svelte';
 	import jobs from '$lib/data/jobs.json';
 	import Resume from '$lib/assets/yangrchen_resume.pdf';
-	console.log(Resume);
 </script>
 
 <div class="mt-6 md:mt-10">

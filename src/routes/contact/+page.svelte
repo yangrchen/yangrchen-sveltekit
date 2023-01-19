@@ -3,7 +3,8 @@
 	import { validator } from '@felte/validator-yup';
 	import * as yup from 'yup';
 	import { onMount } from 'svelte';
-	import {PUBLIC_RECAPTCHA_SITE_KEY} from '$env/static/public'
+	import { PUBLIC_RECAPTCHA_SITE_KEY } from '$env/static/public';
+
 	onMount(() => {
 		window.handleCaptchaCallback = handleCaptchaCallback;
 		window.handleCaptchaError = handleCaptchaError;
