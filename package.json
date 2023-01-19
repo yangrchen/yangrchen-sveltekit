@@ -40,9 +40,15 @@
   "type": "module",
   "dependencies": {
     "@felte/validator-yup": "^1.0.7",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@sendgrid/mail": "^7.6.2",
     "@types/grecaptcha": "^3.0.4",
+    "@vitejs/plugin-basic-ssl": "^0.1.2",
+    "aws-sdk": "^2.1261.0",
     "felte": "^1.2.0",
+    "imagekit": "^4.1.1",
+    "imagekit-javascript": "^1.5.4",
+    "svelte-fa": "^3.0.3",
     "yup": "^0.32.11"
   },
   "license": "UNLICENSED"

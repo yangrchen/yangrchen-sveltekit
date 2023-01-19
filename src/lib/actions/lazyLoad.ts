@@ -3,13 +3,14 @@ const options = {
     rootMargin: '0px',
     threshold: 0
 }
-export const lazyLoad = (image: HTMLImageElement, srcset: string) => {
+export const lazyLoad = (image: HTMLImageElement, imgProps: { src: string, srcset: string }) => {
     const loaded = () => {
         image.style.opacity = '1';
     }
     const observer = new IntersectionObserver(entries => {
         if (entries[0].isIntersecting) {
-            image.srcset = srcset;
+            image.src = imgProps.src;
+            image.srcset = imgProps.srcset;
 
             if (image.complete) {
                 loaded()

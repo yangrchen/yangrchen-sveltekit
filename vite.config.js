@@ -1,5 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { imagetools } from 'vite-imagetools';
+import basicSsl from '@vitejs/plugin-basic-ssl';
+import postcss from 'postcss';
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -8,10 +10,10 @@ const config = {
             allow: ['..']
         }
     },
-    plugins: [sveltekit(), imagetools({ force: true })],
+    plugins: [sveltekit(), imagetools({ force: true }), basicSsl(), postcss()],
     resolve: {
         alias: {
-            '$artwork': '/src/assets/artwork'
+            '$artwork': '$lib/assets/artwork'
         }
     }
 };

@@ -1,7 +1,6 @@
-import { json, type RequestHandler } from "@sveltejs/kit";
-import { MailService, ResponseError, type MailDataRequired } from "@sendgrid/mail";
+import { json, type RequestHandler, error } from "@sveltejs/kit";
+import { MailService, type MailDataRequired } from "@sendgrid/mail";
 import type { EmailData } from "@sendgrid/helpers/classes/email-address";
-import { invalid } from "@sveltejs/kit";
 
 const { SENDGRID_API_KEY, SENDGRID_SENDER, RECAPTCHA_SECRET_KEY } = process.env;
 
@@ -27,9 +26,9 @@ export const POST: RequestHandler = async ({ request }) => {
                 message: "Email sent successfully. Talk to you soon!"
             })
         } else {
-            return invalid(500, { recaptcha: "Recaptcha failed." });
+            return error(500, "Recaptcha failed.");
         }
     } catch (err) {
-        return invalid(500, { submission: "An error has occurred during submission. Please try again later." })
+        throw error(500, "An error has occurred during submission. Please try again later.")
     }
 }

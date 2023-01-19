@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { lazyLoad } from '$lib/actions/lazyLoad';
-	import ProfileImage from '/src/assets/profile/yang-profile-2.png?width=1366;768;366&format=webp&aspect=2:3&srcset&imagetools';
+	import ProfileImage from '$lib/assets/profile/yang-profile-2.png?width=1366;768;366&format=webp&aspect=2:3&srcset&imagetools';
 	let imgProps: ImageProps = {
 		srcset: ProfileImage,
 		alt: 'Portrait of author with boxing gloves on'
@@ -11,7 +11,7 @@
 	class="flex flex-col space-y-10 lg:space-x-8 md:space-y-0 lg:flex-row mt-12 justify-center items-center"
 >
 	<div class="relative h-[25em] md:h-[56em] lg:h-[38em] 2xl:h-[40em]">
-		<img use:lazyLoad={imgProps.srcset} alt={imgProps.alt} />
+		<img use:lazyLoad={{ src: '', srcset: imgProps.srcset }} alt={imgProps.alt} />
 	</div>
 	<div
 		class="w-5/6 lg:w-2/4 text-l break-words leading-loose md:leading-loose md:text-xl lg:leading-loose lg:text-2xl xl:leading-loose xl:text-xl lg:pt-0 xl:pt-0 space-y-2"
@@ -24,7 +24,7 @@
 			<a
 				href="https://www.macedontechnologies.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-emerald-300 hover:border-emerald-500 green-highlight"
 			>
 				Macedon Technologies</a
@@ -36,14 +36,14 @@
 			<a
 				href="https://www.wattsatelier.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight">Watts Atelier</a
 			>
 			and
 			<a
 				href="https://foundationartschool.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight"
 				>Foundation Art School</a
 			>. Check out my work in the
@@ -55,6 +55,7 @@
 	</div>
 </div>
 
+<!-- TODO: Refactor links styles into their own component -->
 <style>
 	img {
 		height: inherit;
@@ -77,7 +78,7 @@
 		);
 		background-repeat: no-repeat;
 		background-size: 100% 0;
-		background-position: 0 100%;
+		background-position: 0 111%;
 		transition: all 0.5s;
 		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 	}

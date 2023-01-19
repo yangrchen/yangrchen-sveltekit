@@ -6,12 +6,14 @@ export declare global {
         resetCaptcha: () => void;
         handleCaptchaError: () => void;
     }
-    interface ImageProps {
-        alt: string;
-        src?: string;
-        srcset: string;
+    interface FileObj {
+        file: File;
+        src: string;
     }
-    interface DrawingProps extends ImageProps {
+    interface FileDict<FileObj> {
+        [Key: number]: FileObj;
+    }
+    interface ArtworkMetadata {
         medium: string,
         displayName: string
     }
@@ -23,5 +25,6 @@ export declare global {
         const out;
         export default out;
     }
+
 }
 

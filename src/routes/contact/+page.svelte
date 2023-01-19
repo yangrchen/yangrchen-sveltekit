@@ -8,11 +8,13 @@
 		window.handleCaptchaError = handleCaptchaError;
 		window.resetCaptcha = resetCaptcha;
 	});
+	let loading = false;
 	let name: string;
 	let email: string;
 	let message: string;
 	let res: CustomResponse = {};
 	const handleCaptchaCallback = async (token: string) => {
+		loading = true;
 		let submit = await fetch('/contact', {
 			method: 'POST',
 			body: JSON.stringify({ name, email, message, token: token }),
@@ -22,6 +24,7 @@
 		});
 		resetCaptcha();
 		res = await submit.json();
+		loading = false;
 	};
 	const handleCaptchaError = () => {
 		console.log('Captcha error');
@@ -50,24 +53,24 @@
 </svelte:head>
 
 <form use:form on:submit|preventDefault={handleSubmit} class="w-full flex flex-col gap-y-2">
-	<label for="Name" class="required">Name</label>
+	<label for="Name" class="after:content-['*'] after:text-red-500">Name</label>
 	<input type="text" class="p-2 rounded" name="Name" bind:value={name} />
 	{#if $errors.Name}
 		<span>{$errors.Name}</span>
 	{/if}
-	<label for="Email" class="required">Email</label>
+	<label for="Email" class="after:content-['*'] after:text-red-500">Email</label>
 	<input type="text" class="p-2 rounded" name="Email" bind:value={email} />
 	{#if $errors.Email}
 		<span>{$errors.Email}</span>
 	{/if}
-	<label for="Message" class="required">Leave a Message!</label>
+	<label for="Message" class="after:content-['*'] after:text-red-500">Leave a Message!</label>
 	<textarea name="Message" class="p-2 rounded" cols="40" rows="5" bind:value={message} />
 	{#if $errors.Message}
 		<span>{$errors.Message}</span>
 	{/if}
 	<button
 		type="submit"
-		disabled={!$isValid}
+		disabled={!$isValid || loading}
 		class="rounded py-2 mt-4 w-80 self-center {buttonClasses}">Send Message</button
 	>
 	<div
@@ -83,9 +86,3 @@
 {#if res.message !== undefined}
 	{res.message}
 {/if}
-
-<style>
-	.required:after {
-		content: ' *';
-	}
-</style>
