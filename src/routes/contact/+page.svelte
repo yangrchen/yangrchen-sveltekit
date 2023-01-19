@@ -3,6 +3,7 @@
 	import { validator } from '@felte/validator-yup';
 	import * as yup from 'yup';
 	import { onMount } from 'svelte';
+	import {PUBLIC_RECAPTCHA_SITE_KEY} from '$env/static/public'
 	onMount(() => {
 		window.handleCaptchaCallback = handleCaptchaCallback;
 		window.handleCaptchaError = handleCaptchaError;
@@ -41,7 +42,6 @@
 		extend: validator({ schema }),
 		validateSchema: schema
 	});
-	const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 	$: buttonClasses = $isValid ? 'cursor-pointer bg-pink-300 hover:bg-pink-200' : 'bg-gray-300';
 </script>
 
@@ -73,7 +73,7 @@
 	<div
 		class="g-recaptcha"
 		id="recaptcha"
-		data-sitekey={SITE_KEY}
+		data-sitekey={PUBLIC_RECAPTCHA_SITE_KEY}
 		data-callback="handleCaptchaCallback"
 		data-expired-callback="resetCaptcha"
 		data-error-callback="handleCaptchaError"

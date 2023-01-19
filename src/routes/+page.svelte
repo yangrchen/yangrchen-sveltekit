@@ -24,7 +24,7 @@
 			<a
 				href="https://www.macedontechnologies.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-emerald-300 hover:border-emerald-500 green-highlight"
 			>
 				Macedon Technologies</a
@@ -36,14 +36,14 @@
 			<a
 				href="https://www.wattsatelier.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight">Watts Atelier</a
 			>
 			and
 			<a
 				href="https://foundationartschool.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 				class="border-b-2 border-pink-300 hover:border-pink-500 pink-highlight"
 				>Foundation Art School</a
 			>. Check out my work in the
